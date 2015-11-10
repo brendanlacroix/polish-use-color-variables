@@ -1,6 +1,6 @@
 {
   "name": "polish-use-color-variables",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Polish plugin to enforce the use of variables for colors in SCSS.",
   "main": "index.js",
   "repository": {
