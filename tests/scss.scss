@@ -1,0 +1,27 @@
+/* should fail */
+.icon-large {
+  color: #707020;
+}
+.great-class {
+  color: palegoldenrod;
+
+  .hover {
+    border: 1px solid #707020;
+  }
+}
+
+/* should pass */
+.cool-really-good-selector {
+  color: $green;
+
+  .nested {
+    color: $green;
+  }
+}
+
+.great {
+  background-color: $green;
+  color: $palegoldenrod;
+  font-size: 12px;
+  border: 2px dashed $green;
+}
