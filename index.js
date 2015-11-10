@@ -3,7 +3,7 @@ var cssColors = require('css-color-names');
 module.exports = {
   name: 'use-color-variables',
   message: 'All colors should be defined as variables in a single file.',
-  test: function(ast, path, options){
+  test: function(ast, path){
     var errors = [];
 
     ast.traverse(function(node) {
@@ -14,8 +14,7 @@ module.exports = {
       node.forEach('color', function(color) {
         errors.push({
           node    : node,
-          message : color.toString(),
-          colorFile : options.colorFile
+          message : color.toString()
         });
       });
 
@@ -26,8 +25,7 @@ module.exports = {
 
         errors.push({
           node      : node,
-          message   : ident.toString(),
-          colorFile : options.colorFile
+          message   : ident.toString()
         });
       });
     });

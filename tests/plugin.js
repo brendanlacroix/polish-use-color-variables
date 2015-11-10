@@ -9,7 +9,7 @@ define(function (require) {
     name: 'polish-use-color-variables',
 
     message: function () {
-      assert.strictEqual(plugin.message({ error : { message : '#7ea5e2' } }), 'All colors should be defined in _colors.scss. Use a variable instead of "#7ea5e2".');
+      assert.strictEqual(plugin.message, 'All colors should be defined as variables in a single file.');
     }
   });
 
