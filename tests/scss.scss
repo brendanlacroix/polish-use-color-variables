@@ -13,6 +13,9 @@
 .this-stinks-too {
   color: rgb(255, 255, 255, 0.5);
 }
+.this-fails {
+  border: 1px solid rgba(1, 1, 1, 0.5);
+}
 
 /* should pass */
 .cool-really-good-selector {
