@@ -7,7 +7,11 @@
 
   .hover {
     border: 1px solid #707020;
+    background-color: rgba(0, 0, 0, 0.4);
   }
+}
+.this-stinks-too {
+  color: rgb(255, 255, 255, 0.5);
 }
 
 /* should pass */

@@ -11,10 +11,17 @@ module.exports = {
         return;
       }
 
+      node.forEach('function', function(func) {
+        if (func.contains('ident') && func.first('ident').content.indexOf('rgb') === 0) {
+          errors.push({
+            node : func
+          });
+        }
+      });
+
       node.forEach('color', function(color) {
         errors.push({
-          node    : node,
-          message : color.toString()
+          node : node
         });
       });
 
@@ -24,8 +31,7 @@ module.exports = {
         }
 
         errors.push({
-          node      : node,
-          message   : ident.toString()
+          node : node
         });
       });
     });
