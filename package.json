@@ -17,6 +17,6 @@
   },
   "devDependencies": {
     "gonzales-pe": "git://github.com/brendanlacroix/gonzales-pe.git",
-    "intern": "^3.0.6"
+    "intern": "^3.3.2"
   }
 }
